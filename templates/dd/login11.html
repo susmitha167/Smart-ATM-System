@@ -1,0 +1,159 @@
+<html>
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Smart ATM</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Small Apps Template v1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../static/images/favicon.png" />
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="../static/plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="../static/plugins/slick/slick.css">
+  <link rel="stylesheet" href="../static/plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="../static/plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="../static/plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="../static/css/style.css" rel="stylesheet">
+<script language="javascript">
+function validate()
+{
+    if(document.form1.password.value=="")
+    {
+	alert("Enter Your Pin No.");
+	document.form1.password.focus();
+	return false;
+	}
+	if(document.form1.password.value.length!=4)
+    {
+	alert("Incorrect Pin No.");
+	document.form1.password.select();
+	return false;
+	}
+	return true;
+}
+function getpin(id)
+{
+var x;
+x=document.form1.password.value+id;
+document.form1.password.value=x;
+}	
+	
+
+</script>
+<style type="text/css">
+<!--
+.st1 {
+	font-size: 24px;
+	font-style: italic;
+	font-weight:bold;
+	color:#CCCCCC;
+  text-shadow: 2px 2px 9px #ffffff;
+}
+.st2
+{
+  border-radius: 25px;
+  background:#003399;
+  padding: 20px;
+}
+-->
+</style>
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+<section class="user-login section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="block">
+					<!-- Image -->
+					<div class="image align-self-center"><img src="" width="389" height="276"></div>
+					<!-- Content -->
+					<div class="content text-center">
+						<div class="logo">
+							<a href="/"><img src="../static/images/logo2.png" alt=""></a>						</div>
+						<div class="title-text">
+							<h3>Login</h3>
+						</div>
+						<form name="form1" action="" method="post">
+						<div class="st2">
+						<table width="347" height="241" border="0" align="center">
+	 
+        <tr>
+          <td align="center"  class="butt" scope="col"><div align="center" class="st1"><a href="javascript:getpin('{{ value[0][0] }}')">{{ value[0][0] }}</a></div></td>
+          <td align="center"  class="butt" scope="col"><div align="center" class="st1"><a href="javascript:getpin('{{ value[1][0] }}')">{{ value[1][0] }}</a></div></td>
+          <td align="center"  class="butt" scope="col"><div align="center" class="st1"><a href="javascript:getpin('{{ value[2][0] }}')">{{ value[2][0] }}</a></div></td>
+        </tr>
+        <tr>
+          <td align="center"  class="butt" scope="col"><div align="center" class="st1"><a href="javascript:getpin('{{ value[3][0] }}')">{{ value[3][0] }}</a></div></td>
+          <td align="center"  class="butt" scope="col"><div align="center" class="st1"><a href="javascript:getpin('{{ value[4][0] }}')">{{ value[4][0] }}</a></div></td>
+          <td align="center"  class="butt" scope="col"><div align="center" class="st1"><a href="javascript:getpin('{{ value[5][0] }}')">{{ value[5][0] }}</a></div></td>
+        </tr>
+        <tr>
+          <td align="center"  class="butt" scope="col"><div align="center" class="st1"><a href="javascript:getpin('{{ value[6][0] }}')">{{ value[6][0] }}</a></div></td>
+          <td align="center"  class="butt" scope="col"><div align="center" class="st1"><a href="javascript:getpin('{{ value[7][0] }}')">{{ value[7][0] }}</a></div></td>
+          <td align="center"  class="butt" scope="col"><div align="center" class="st1"><a href="javascript:getpin('{{ value[8][0] }}')">{{ value[8][0] }}</a></div></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="center"  class="butt" scope="col"><div align="center"><a href="javascript:getpin('{{ value[9][0] }}')">{{ value[9][0] }}</a></div></td>
+          <td>&nbsp;</td>
+        </tr>
+		
+      </table>
+	  </div>
+	  <br>
+							<!-- Username -->
+							<input class="form-control main" type="password" name="password" placeholder="Pin No." maxlength="4" required>
+							<!-- Password -->
+							
+							<!-- Submit Button -->
+							<input type="submit" class="btn btn-main-sm" value="Submit">
+						</form>
+						<span style="color:#FF0000">{{msg}}</span>
+						<div class="new-acount">
+							
+						<!--	<p>Don't Have an account? <a href="/register"> SIGN UP</a></p>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+  <!-- To Top -->
+  <div class="scroll-top-to">
+    <i class="ti-angle-up"></i>
+  </div>
+  
+  <!-- JAVASCRIPTS -->
+  <script src="../static/plugins/jquery/jquery.min.js"></script>
+  <script src="../static/plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="../static/plugins/slick/slick.min.js"></script>
+  <script src="../static/plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="../static/plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="../static/plugins/aos/aos.js"></script>
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+  <script src="../static/plugins/google-map/gmap.js"></script>
+  
+  <script src="../static/js/script.js"></script>
+</body>
+
+</html>
